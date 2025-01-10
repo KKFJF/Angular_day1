@@ -1,0 +1,25 @@
+<script>
+    let user = {
+        firstname: 'deepthi',
+        lastname: 'mekala',
+
+        fullname: function() {
+            console.log('fullname',this);
+            console.log(this.firstname + " "+ this.lastname);
+
+            function f1(){
+                console.log('f1', this)
+                console.log(this.firstname + " " + this.lastname);
+
+            }
+            f1();
+
+            let f2 = () => {
+                console.log('f2', this);
+                console.log(this.firstname + " " + this.lastname)
+            }
+            f2();
+        }
+
+    }
+</script>

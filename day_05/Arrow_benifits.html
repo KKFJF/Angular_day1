@@ -1,0 +1,21 @@
+<script>
+    class student{
+        fname = 'deepthi';
+        lname = 'mekala';
+
+        fullname1(){
+            console.log(this.fname+ " "+ this.lname)
+
+        }
+        fullname2 = () =>{
+            console.log(this.fname+ " " +this.lname)
+        }
+    }
+    let stud1 = new student();
+    stud1.fullname1();
+    stud1.fullname2();
+
+    //( what if   i want this full name function after 3 sec)
+    setTimeout(stud1.fullname1, 2000);
+    setTimeout(stud1.fullname2, 4000);
+</script>

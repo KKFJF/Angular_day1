@@ -1,0 +1,14 @@
+<script>
+    let user = {
+        firstname: 'deepthi', lastname: 'Mekala',fullname1: function(){
+            console.log(this.firstname+""+this.lastname);
+            //deepthi mekala (this will represent as user)
+        },
+        fullname2:()=>{
+            console.log(this.firstname+""+this.lastname);
+            //this = window (in arrow function we shouldn't be using an object method )
+        }
+    }
+    user.fullname1();
+    user.fullname2();
+</script>

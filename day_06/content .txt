@@ -1,0 +1,13 @@
+Strings:
+ are used to manipulate a sequence of characters.
+ javascript strings is zero or more characters written inside quotes.
+  we can use single quotes or double for a string.
+  - we can use  single or double quotes  inside a string as long as they dont  match the quotes surrouding the string
+   example: var  answer1- 'it's alright'; // in-valid ( called we are writing  single inside and outter side of the sings)
+            var  answer2 -  'he name is "ravi"' ; this  //is valid
+            var  answer3- " it's alright"; //valid
+  Strings can  be created in 2 way:
+  1. as primitives using string literals:
+      var a = 'hello';
+  2. as objects using the string() constructor
+          var b = new string('hello');

@@ -1,0 +1,25 @@
+<script>
+    //string literal
+    let str1 = 'hello';
+    let str2 = 'hello';
+    //string object
+    let str3 =  new String('hello');
+    let str4 = new String('hello');
+
+    console.log(typeof str1);//string (datatype)
+    console.log(typeof str3);// object of string class 
+
+    // when we  compare string literal with other string literal
+    console.log(str1 == str2); // values are compared 
+    console.log(str2 == str3); // auto typecasting will happens
+    console.log(str3 == str4); // address comparision will happens
+    
+    let str5 = '2+3+4';
+    let str6 = new String('2+3+4');// string object
+    console.log(eval(str5));//9 
+    console.log(eval(str6));// string('2+3+4')
+
+    let str7 = str6.valueof();// converts string object  to string literal
+    console.log(eval(str7));
+    
+</script>

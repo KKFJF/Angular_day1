@@ -1,0 +1,37 @@
+<body>
+    <button id="btn1">user-1</button>
+    <button id="btn2">user-2</button>
+    <button id="btn3">user-3</button>
+    <button id="btn4">user-4</button>
+    <button id="btn5">user-5</button>
+    <button id="btn6">user-6</button>
+    <button id="btn7">user-7</button>
+    <button id="btn8">user-8</button>
+    <button id="btn9">user-9</button>
+    <button id="btn10">user-10</button>
+
+    <script>
+        async function fetchUserDetails(){
+            const userId = this.id;
+         let response  = await fetch('https://jsonplaceholder.typicode.com/users/${userId}')
+         let finalData = await  response.json();
+         console.log(finalData);
+        }
+
+        //arrow function:(2. arrow function should not be used if this has to be dynamic)
+        let fetchUserData = async() =>{
+            console.log(this)
+            const userId = this.id;
+            let response  = await fetch('https://jsonplaceholder.typicode.com/users/${userId}')
+            let finalData = await  response.json();
+            console.log(finalData);
+
+        }
+
+        let buttons = document.querySelectorAll('button');
+        for(button of button){
+            button.addEventListener('click',fetchUserDetails)
+        }
+
+    </script>
+</body>
