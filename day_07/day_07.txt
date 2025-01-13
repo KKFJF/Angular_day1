@@ -1,0 +1,33 @@
+Array :
+arrays are used yo store multiple values in a single variable
+ex: var arr = [10,20,30,40]
+-an array can hold many values under a single  name , and we can access the values by referring to an index number.
+ ex:  console.log(arr[1]);
+ - usually in other programming language  array stores similar  type of elements but  in javascript array can have heterogeneous elements.
+ ex: var  arr = [10, 'deepthi', true, {}, []
+ ]
+
+ array creation:
+ var arr1 = [10,20,30]
+ var arr2 =  new array(5);
+ var arr3 =  new array(10,20,30,40,50);
+
+ -iterating over an array : 1. loop , 2. for-in , 3. for-of , 4. forEach()
+
+ properties: length, delete.
+Array has two methods:
+1.instance menthod 
+2. Static methods
+
+Array methods:
+concat(...items)- returns a new array: copies all members of the current one and adds items to it. if any of items  is an array, then its elements are taken.
+
+-- how to search among elements of array:
+at(index)- takes an integer  and returns the items at that index.allow negative index
+indexof/lastindexof(item,pos)- look for item starting from position pos, return the index or -1 if not found.
+ Includes(values)- returns true if the array ha values, otherwise false.
+ find(function)- filter element through the function , return first  value that make it return true.
+ findlast(function)- filter elements through the function , return all values that make it return true.
+ filter(function)- filter elements through the function , return all values that make it return true.
+ findindex(function)- it is like find(), but returns the index instead of a value.
+ 

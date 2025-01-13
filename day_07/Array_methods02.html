@@ -1,0 +1,44 @@
+<script>
+    let arr = [10,20,30,40];
+    console.log(arr); //[10,20,30,40]
+
+    arr.push(50);
+    console.log(arr); //[10,20,30,40,50]
+
+    arr.pop();
+    console.log(arr); //[10,20,30,40]
+
+    arr.unshift(50);
+    console.log(arr);
+    arr.shift();
+    console.log(arr);
+
+
+    //splice(index, #elemnets to remove, elements to insert)   2.  it will play with original array
+    arr.splice(1,2,25,35);//  thi splice method is used in many perpose , we use this method for only inster , only delete and insert and delete.
+    console.log(arr);// result: [10,25,35,40] // both delete & insert
+
+    arr.splice(1,2)// only delete
+    console.log(arr);//[10,40]
+
+    arr.splice(1,0,20,30);//only insert
+    console.log(arr);//[10,20,30,40]
+
+//original array:
+
+const arr1 = [1,2,3];
+const arr2 = [4,5];
+const arr3 = [6,7];
+
+const result = arr1.concat(arr2, arr3);
+console.log(result);
+// conccatenating values and arrays:
+const mixedresult = arr1.concat(10,[11,12],13);
+console.log(mixedresult);
+
+
+//with methods:
+let arr5 = arr.with(2,25);
+console.log(arr,arr5);
+
+</script>

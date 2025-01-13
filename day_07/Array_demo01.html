@@ -1,0 +1,37 @@
+<script>
+    let cars = ['Tata', 'Honda', 'Maruti','Hundai'];
+
+//1.loop:
+for (let i =0; i< cars.length; i++ ) {
+    document.write(cars[i] + '<br/>' );
+}
+document.write('<br>-------------------------------<br/>');
+
+//2. for-in loop:
+for(ind in cars){
+    document.write(cars[ind]+'<br/>' );
+}
+document.write('<br>-------------------------------<br/>');
+
+//3.for -of loop
+for(car of cars){
+    document.write(car + '<br/>');
+
+}
+document.write('<br>-------------------------------<br/>');
+
+//4. foreach() - higher order function (it takes another fucntion as arrugment )
+cars.forEach(function(val,ind, arr){
+    document.write(val. ind, arr + '<br/>');
+ 
+});
+//or
+function f1(val,ind, arr){
+    document.write(val. ind, arr + '<br/>');
+ 
+}
+cars.forEach(f1);
+
+
+
+</script>

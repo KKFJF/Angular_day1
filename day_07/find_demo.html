@@ -1,0 +1,39 @@
+<script>
+    let nums = [10,20,30,40,50];
+    let cars = ['tata','honda'];
+
+    let employees = [
+        {eid:101, name:'deepthi', sal: 8800, gender:'female'},
+        {eid:102, name: 'Abhishek', sal:5500, gender: 'male'},
+        {eid:103, name: 'sameer', sal:7000, gender: 'male'},
+        {eid:104, name: 'Pooja', sal:9000, gender: 'female'},
+        
+    ];
+
+    //find the first female employee:
+   /* let first_female_emp = {};
+    for(emp of employees){
+        if(emp.gender==='female'){
+            first_female_emp = emp;
+            break
+        }
+    }*/
+
+    //or
+    let first_female_emp = employees.find((emp) => emp.gender === 'female');
+    console.log(first_female_emp)
+
+    //at what index the first female emp is present?
+    let first_female_emp_ind = employees.findIndex((emp) => emp.gender === 'female');
+    console.log(first_female_emp_ind);
+    //find the last female employee
+    let last_female_emp = employees.findLast((emp) => emp.gender === 'female');
+    console.log(last_female_emp);
+
+    let last_female_emp_ind = employees.findLastIndex((emp) => emp.gender === 'female');
+    console.log(last_female_emp_ind);
+
+    let allfemale_emp = employees.filter((emp) => emp.gender === 'female');
+    console.log(allfemale_emp);
+
+</script>
