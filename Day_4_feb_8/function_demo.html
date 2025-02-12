@@ -1,0 +1,75 @@
+
+<script>
+//function declaration
+function fucname(name){
+     console.log(name);
+}
+fucname("Deepthi");
+console.log(`-------------------------------`)
+
+function add(a ,b ){
+    console.log(a+b);
+}
+add(4,6)
+
+function sub(a,b,c){
+    console.log(a-b-c);
+}
+sub(4,6,8);
+
+add(4,6)// before executing of the code it declars the function 
+function add(a ,b ){
+    console.log(a+b);
+}
+
+//function expression:
+let sayhello = function(){
+    console.log("hello");
+};
+sayhello();
+
+//passing function to other function
+// function dotask(task){
+//      task("deepthi");
+// }
+
+// dotask(function(name){
+//     console.log(name);
+// });
+// dotask();
+
+let person = {
+    pname : "Kavya",
+    greet: function(){
+        console.log(this.pname);
+    }
+};
+person.greet();
+
+function greet(name) {
+    console.log("Hello, " + name + "!");
+};
+
+greet("Deepthi");
+
+
+let j = (a,b) => {
+    console.log(a*b);
+}
+j(4,9);
+//self invoked:
+
+(function(name){
+    console.log(name);
+
+})("shivani");
+
+
+let r = [10,20,60,70];
+
+let e = r.map((num) => num+5)
+console.log(e);
+
+
+</script>
+
