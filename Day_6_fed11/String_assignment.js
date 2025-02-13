@@ -23,3 +23,32 @@ function maxRepeatedChar(str) {
 }
 
 console.log(maxRepeatedChar('hello world'));
+
+//Swap The case for Each Character in a string  input: 'Hello World' output: 'hELLO wORLD'
+
+function swapCase(str) {
+    return str
+        .split('')  
+        .map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase())  
+        .join(''); 
+}
+
+console.log(swapCase('Hello World')); 
+
+//Print the Abbreviation for a string input: 'Rabindra Nath Tagore' output: 'R. N. tagore'
+let str = 'Rabindra Nath Tagore';
+let result = str.split(' ').map((word, index) => index < 2 ? word[0].toUpperCase() + '.' : word.toLowerCase()).join(' ');
+
+console.log(result);  
+
+//Shift the characters by the next character input:  'abcxyz' output: 'bcdyza'
+let str1 = 'abcxyz';    
+let outcome  = '';         
+for (let i = 0; i < str.length; i++) {
+    let char = str[i];   
+    outcome += String.fromCharCode(char.charCodeAt(0) + 1);
+}
+
+console.log(result);
+
+

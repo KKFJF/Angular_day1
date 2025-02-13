@@ -81,7 +81,7 @@ let str9 = 'hello@#hi&';
 let result = removeSpecialCharacters(str9);
 
 function removeSpecialCharacters(str9) {
-    // Use a regular expression to replace non-alphanumeric characters with an empty string
+    
     return str9.replace(/\W/g, '');
 }
 
