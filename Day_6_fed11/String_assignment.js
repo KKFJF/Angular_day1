@@ -50,6 +50,8 @@ for (let i = 0; i < str.length; i++) {
 }
 // 
 
+// fb
+
 console.log(result);
 
 
