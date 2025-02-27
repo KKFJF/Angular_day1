@@ -48,6 +48,7 @@ for (let i = 0; i < str.length; i++) {
     let char = str[i];   
     outcome += String.fromCharCode(char.charCodeAt(0) + 1);
 }
+// 
 
 console.log(result);
 

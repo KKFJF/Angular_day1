@@ -49,6 +49,7 @@ for (let word of w) {
 }
 console.log(longest);
 console.log("======================================");
+// bdsljd
 
 //WAP to print Account number input:- '12345678987' output:- '12*******87'
 let accNum = "12345678987";
